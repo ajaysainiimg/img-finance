@@ -1,0 +1,3092 @@
+// hero-section 
+
+.hero-section{
+    background-image: url(../img/Main-page/hero_bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    &::after{
+        position: absolute;
+        content: '';
+        background: linear-gradient(90.23deg, rgba(247, 247, 247, 0) 22.8%, rgba(247, 247, 247, 0.24) 32.07%, #F9F8F8 44.24%, #F7F7F7 93.26%);
+        
+    }
+    & .input-group {
+        & .place-holder{
+            font-size: 14px;
+        }
+        & .serach-2{
+            background-color: $theme1;
+            outline: 1px solid #000;
+            height: 68px;
+            width: 67px ;
+            right: 0;
+        }
+    }
+    & .sub-title {
+        font-size: 38px;
+        color: $theme2;
+        line-height: 45px;
+    }
+    
+  }
+//   talk-export
+.talk-export {
+
+    & .talk-export-section{
+        & .white-gray-section{
+            background: linear-gradient(270deg, #F8EFF0 48.13%, #F8EFF0 48.15%);
+            min-height: 156px;
+            
+            & .main-heading{
+                font-size: 34px;
+            }
+        }
+        & .red-section{
+            background-color: $theme1;
+            min-height: 156px;
+
+            & .sub-heading{
+                & .icon{
+                    width: 34px;
+                    height: 30px;
+                }
+            }
+           
+        }
+        & .redSection2{
+            background-color:#8C060E;
+            min-height: 156px;
+            & .sub-heading{
+                & .icon{
+                    width: 34px;
+                    height: 30px;
+                }
+            }
+            
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin index-page-mixin-min-sm() {
+ 
+}
+// Medium devices (tablets, 768px and up)
+@mixin index-page-mixin-min-md() {}
+// Large devices (desktops, 992px and up)
+@mixin index-page-mixin-min-lg() {}
+// X-Large devices (large desktops, 1200px and up)
+@mixin index-page-mixin-min-xl() {}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin index-page-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin index-page-mixin-max-xs() {
+    .hero-section{
+      
+        &::after{
+           
+        }
+        .hero-title{
+            font-size: 18px;
+            & span{
+              
+            }
+          }
+        & .input-group {
+            & .input-group-text{
+                border: none !important;
+            }
+            & .place-holder{
+               
+            }
+            & .serach-2{
+          
+            }
+        }
+        & .sub-title {
+            font-size: 23px;
+            line-height: 31px;
+            & br{
+                display: none;
+            }
+        }
+        & .Custom-btn{
+            &.pageBtn{
+                padding: 11px 33px;
+                font-size: 14px;
+            }
+        }
+      }
+    //   talk-export
+    .talk-export {
+
+        & .talk-export-section{
+            & .white-gray-section{
+                
+                
+                & .main-heading{
+                    
+                }
+            }
+            & .red-section{
+                
+    
+                & .sub-heading{
+                    & .icon{
+                       
+                    }
+                }
+               
+            }
+            & .redSection2{
+                
+                & .sub-heading{
+                    & .icon{
+                        
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin index-page-mixin-max-sm() {
+    .hero-section{
+      
+        &::after{
+           
+        }
+        .hero-title{
+            font-size: 24px;
+            & span{
+              
+            }
+          }
+        & .input-group {
+          
+            & .place-holder{
+               
+            }
+            & .serach-2{
+          width: 40px;
+          height: 40px;
+            }
+        }
+        & .sub-title {
+          
+        }
+      }
+    //   talk-export
+    .talk-export {
+
+        & .talk-export-section{
+            & .white-gray-section{
+                background: linear-gradient(270deg, #F8EFF0 48.13%, #F8EFF0 48.15%);
+                
+                
+                & .main-heading{
+                    
+                }
+            }
+            & .red-section{
+               
+    
+                & .sub-heading{
+                    & .icon{
+                        
+                    }
+                }
+               
+            }
+            & .redSection2{
+                
+                & .sub-heading{
+                    & .icon{
+                        
+                    }
+                }
+                
+            }
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin index-page-mixin-max-md() {
+    .hero-section{
+    
+        &::after{
+           
+        }
+        & .input-group {
+            & .place-holder{
+               
+            }
+            & .serach-2{
+          width: 50px;
+          height: 51px;
+            }
+        }
+        & .sub-title {
+            font-size: 30px;
+            line-height: 35px;
+            color: $theme1;
+        }
+        & .Custom-btn{
+            &.pageBtn{
+                font-size: 16px;
+            }
+        }
+      }
+    //   talk-export
+    .talk-export {
+
+        & .talk-export-section{
+            & .white-gray-section{
+                
+                
+                & .main-heading{
+                    font-size: 28px;
+                }
+            }
+            & .red-section{
+                
+    
+                & .sub-heading{
+                   
+                    & .icon{
+                
+                    }
+                }
+               
+            }
+            & .redSection2{
+                
+                & .sub-heading{
+                
+                    & .icon{
+                        
+                    }
+                }
+                
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin index-page-mixin-max-lg() {
+    .hero-section{
+      
+        &::after{
+           
+        }
+        & .input-group {
+            & .place-holder{
+               
+            }
+            & .serach-2{
+          
+            }
+        }
+        & .sub-title {
+          
+        }
+      }
+    //   talk-export
+    .talk-export {
+
+        & .talk-export-section{
+            & .white-gray-section{
+                
+                
+                & .main-heading{
+                   
+                }
+            }
+            & .red-section{
+               
+    
+                & .sub-heading{
+                    & .icon{
+                       
+                    }
+                }
+               
+            }
+            & .redSection2{
+              
+                & .sub-heading{
+                    & .icon{
+                       
+                    }
+                }
+                
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin index-page-mixin-max-xl() {
+    .hero-section{
+      
+        &::after{
+           
+        }
+        & .input-group {
+            & .place-holder{
+               
+            }
+            & .serach-2{
+          
+            }
+        }
+        & .sub-title {
+          
+        }
+      }
+    //   talk-export
+    .talk-export {
+
+        & .talk-export-section{
+            & .white-gray-section{
+                
+                
+                & .main-heading{
+                    font-size: 32px;
+                }
+            }
+            & .red-section{
+                
+    
+                & .sub-heading{
+                    font-size: 20.62px;
+                    & .icon{
+                        
+                    }
+                }
+               
+            }
+            & .redSection2{
+                
+                & .sub-heading{
+                    font-size: 20.62px;
+                    & .icon{
+                        
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+// Popular Seachers
+.popularSeachers{
+    & .PopularSection{
+        & .PopularImage{
+            width: 105px;
+            height:100%;
+        }
+           & .inner-data{
+                        & .Sub-title-heading{
+                            font-size: 18px;
+                        }
+                        & .theme2Heading{
+                            & .icon{
+                                max-width: 24px;
+                                max-height: 24px;
+                            }
+                        }
+                     
+         }
+
+        
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin popularSeachers-mixin-min-sm() {
+ 
+}
+// Medium devices (tablets, 768px and up)
+@mixin popularSeachers-mixin-min-md() {}
+// Large devices (desktops, 992px and up)
+@mixin popularSeachers-mixin-min-lg() {}
+// X-Large devices (large desktops, 1200px and up)
+@mixin popularSeachers-mixin-min-xl() {}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin popularSeachers-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin popularSeachers-mixin-max-xs() {
+    .popularSeachers{
+        & .main-heading{
+            font-size: 22px;
+        }
+        & .PopularSection{
+            & .PopularImage{
+    
+            }
+            & .inner-data{
+                & .Sub-title-heading {
+                    font-size: 14px !important;
+                
+                }
+                & .theme2Heading{
+                    & .icon{
+                       
+                    }
+                }
+              
+             
+            }
+        }
+        & .Custom-btn{
+            &.pageBtn{
+                padding: 11px 33px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin popularSeachers-mixin-max-sm() {
+    .popularSeachers{
+        .main-heading {
+            font-size: 25px;
+        }
+        & .PopularSection{
+            & .PopularImage{
+            }
+            & .inner-data{
+                & .theme2Heading{
+                    & .icon{
+                  
+                    }
+                }
+             
+            }
+        }
+        & .Custom-btn{
+            &.pageBtn{
+                font-size: 16px;
+            }
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin popularSeachers-mixin-max-md() {
+    .popularSeachers{
+        
+      
+        & .PopularSection{
+            
+            & .PopularImage{
+            }
+            & .inner-data{
+                  
+                & .Sub-title-heading {
+                 
+                
+                }
+                & .theme1Heading{
+                    
+                }
+                & .theme2Heading{
+                  
+                    & .icon{
+                     
+                    }
+                }
+                & .section-border{
+                //    display: none;
+                border-right: none !important;
+                border-left: none !important;
+                }
+             
+            }
+            
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin popularSeachers-mixin-max-lg() {
+    .popularSeachers{
+        
+      
+        & .PopularSection{
+            
+            & .PopularImage{
+            }
+            & .inner-data{
+                   
+                & .Sub-title-heading {
+                    font-size: 15px !important;
+                
+                }
+                & .theme1Heading{
+                    font-size: 14px;
+                }
+                & .theme2Heading{
+                    font-size: 14px;
+                    & .icon{
+                     
+                    }
+                }
+             
+            }
+            
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin popularSeachers-mixin-max-xl() {
+    .popularSeachers{
+        & .PopularSection{
+            & .PopularImage{
+    
+            }
+            & .inner-data{
+                & .theme2Heading{
+                    & .icon{
+                 
+                    }
+                }
+             
+            }
+            
+        }
+    }
+}
+
+// platformSuports 
+.platformSuports{
+    & .main-heading{
+        padding-left: 94px;
+        font-size: 40px;
+    }
+    & .nav-tabs{
+        border-radius: 5px;
+        overflow: hidden;
+        border: 1px solid #EEDCDC ;
+        background-color: #EEDCDC;
+        & .nav-item{
+
+            & .nav-link{
+                width: 308px;
+                height: 48px;
+                border: 1px solid #EEDCDC !important;
+                background-color: #EEDCDC;
+                &.active{
+                    background-color: $theme1;
+                    color: $theme3 !important;
+                    border-radius: 5px !important;
+                    border: 1px solid #EEDCDC !important;
+                }
+            }
+        }
+    }
+
+     & .tab-content{
+        & .tab-pane{
+            & .platform-dots{
+                &::after{
+                    position: absolute;
+                    content: '';
+                    background-image: url(../img/Main-page/Frame.svg) !important;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    top: 101px;
+                    left: 38px;
+                    height: 52px;
+                    width: 56px;
+                    z-index: 2;
+                }
+                &::before{
+                    position: absolute;
+                    content: '';
+                    background-image: url(../img/Main-page/Frame.svg) !important;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    bottom: 16px;
+                    right: 30px;
+                    height: 52px;
+                    width: 56px;
+                    z-index: 22;
+                }
+                & .platform-images{
+                    max-width:100%;
+                    max-height:504px ;
+                    height: 100%;
+                    &::before{
+                        position: absolute;
+                        content: '';
+                        background-color: #EEDCDC;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        max-height: 380px;
+                        height: 100%;
+                        border-radius: 25px;
+                        z-index: -1;
+                    }
+                }
+            }
+            & .sub-heading {
+                font-size: 25px;
+            }
+            & .pera{
+                font-size: 18px;
+            }
+        }
+     }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin platformSuports-mixin-min-sm() {
+ 
+}
+// Medium devices (tablets, 768px and up)
+@mixin platformSuports-mixin-min-md() {}
+// Large devices (desktops, 992px and up)
+@mixin platformSuports-mixin-min-lg() {}
+// X-Large devices (large desktops, 1200px and up)
+@mixin platformSuports-mixin-min-xl() {}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin platformSuports-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin platformSuports-mixin-max-xs() {
+    .platformSuports{
+        & .main-heading{
+            font-size: 20px;
+            padding-left:0px;
+        }
+        & .nav-tabs{
+            border: none !important ;
+            background-color:$theme3;
+            & .nav-item{
+    
+                & .nav-link{
+                    width: 220px;
+                    &.active{
+                        
+                    }
+                }
+            }
+        }
+    
+         & .tab-content{
+            & .tab-pane{
+                & .platform-dots{
+                    &::after{
+                     display: none;
+                      
+                    }
+                    &::before{
+                       display: none;
+                    }
+                    & .platform-images{
+                     
+                        &::before{
+                            height: 286px;
+                        }
+                    }
+                }
+                & .sub-heading {
+                    font-size: 18px;
+                }
+                & .pera{
+                    font-size: 14px;
+                }
+                & .Custom-btn{
+                    &.pageBtn{
+                        padding: 11px 33px;
+                        font-size: 14px;
+                    }
+                }
+            }
+         }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin platformSuports-mixin-max-sm() {
+    .platformSuports{
+        & .main-heading{
+            font-size: 22px;
+            padding-left: 50px;
+        }
+        & .nav-tabs{
+        
+            & .nav-item{
+    
+                & .nav-link{
+                    width: 235px;
+                    &.active{
+                        
+                    }
+                }
+            }
+        }
+    
+         & .tab-content{
+            & .tab-pane{
+                & .platform-dots{
+                    &::after{
+                        left: 90px;
+                    }
+                    &::before{
+                        right: 31px;
+                    }
+                    & .platform-images{
+                     
+                        &::before{
+                          
+                        }
+                    }
+                }
+                & .sub-heading {
+                
+                }
+                & .pera{
+             
+                }
+            }
+         }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin platformSuports-mixin-max-md() {
+    .platformSuports{
+        & .main-heading{
+            font-size: 25px;
+        }
+        & .nav-tabs{
+          
+            & .nav-item{
+    
+                & .nav-link{
+                    width: 247px;
+                    &.active{
+                        
+                    }
+                }
+            }
+        }
+    
+         & .tab-content{
+            & .tab-pane{
+                & .platform-dots{
+                    &::after{
+                        top: 126px;
+                        left: 170px;
+                    }
+                    &::before{
+                        right: 120px;
+                    }
+                    & .platform-images{
+                     
+                        &::before{
+                           
+                        }
+                    }
+                }
+                & .sub-heading {
+                
+                }
+                & .pera{
+             
+                }
+                & .Custom-btn{
+                    &.pageBtn{
+                        font-size: 16px;
+                    }
+                }
+            }
+         }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin platformSuports-mixin-max-lg() {
+    .platformSuports{
+        & .main-heading{
+            font-size: 36px;
+        }
+        & .nav-tabs{
+            display: flex !important;
+            flex-wrap: nowrap !important;
+            overflow-x: auto !important;
+            & .nav-item{
+    
+                & .nav-link{
+                  
+                    &.active{
+                        
+                    }
+                }
+            }
+        }
+    
+         & .tab-content{
+            & .tab-pane{
+                & .platform-dots{
+                    &::after{
+                        top: 98px;
+                    }
+                    &::before{
+                        right: -19px;
+                    }
+                    & .platform-images{
+                     
+                        &::before{
+                            max-height: 355px;
+                        }
+                    }
+                }
+                & .sub-heading {
+                    font-size: 22px;
+                }
+                & .pera{
+                    font-size: 16px;
+                }
+            }
+         }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin platformSuports-mixin-max-xl() {
+    .platformSuports{
+        & .nav-tabs{
+        
+            & .nav-item{
+    
+                & .nav-link{
+                 
+                    &.active{
+                        
+                    }
+                }
+            }
+        }
+    
+         & .tab-content{
+            & .tab-pane{
+                & .platform-dots{
+                    &::after{
+                     
+                        z-index: 2;
+                    }
+                    &::before{
+                       
+                    }
+                    & .platform-images{
+                     
+                        &::before{
+                           
+                        }
+                    }
+                }
+                & .sub-heading {
+                
+                }
+                & .pera{
+             
+                }
+            }
+         }
+    }
+}
+// howToPlay
+.howToPlay{
+    & .main-heading{
+        font-size: 40px;
+    }
+    & .howToPlaySection{
+
+       background-color: $theme1;
+        width: 100%;
+        height: 460px;
+
+        &::after{
+            position: absolute;
+            content: '';
+            background-image: url(../img/Main-page/Frame.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 52px;
+            width: 56px;
+            top: -23px;
+            left: -23px;
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            background-image: url(../img/Main-page/Frame.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 52px;
+            width: 56px;
+            bottom: -25px;
+            right: -37px;
+        }
+        & .howToPlayImg{
+                background-image: url(../img/Main-page/howtoplay.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                width: 690px;
+                height: 460px;
+            & .videoplay{
+                height: 100px;
+                width: 100px;
+                background-color: $theme1;
+                border: 3px solid $theme3;
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translateX(-50%);
+
+             
+            }
+        }
+    }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@mixin howToPlay-mixin-min-sm() {
+ 
+}
+// Medium devices (tablets, 768px and up)
+@mixin howToPlay-mixin-min-md() {}
+// Large devices (desktops, 992px and up)
+@mixin howToPlay-mixin-min-lg() {}
+// X-Large devices (large desktops, 1200px and up)
+@mixin howToPlay-mixin-min-xl() {}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin howToPlay-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin howToPlay-mixin-max-xs() {
+    .howToPlay{
+        & .main-heading{
+            font-size: 20px;
+        }
+        & .howToPlaySection{
+            height: 197px;
+    
+            &::after{
+           display: none;
+            }
+            &::before{
+            display: none;
+            }
+            & .howToPlayImg{
+                width: 259px;
+                height: 197px;
+                & .videoplay{
+                    height: 50px;
+                    width: 50px;
+                }
+
+            }
+        }
+        & .Custom-btn{
+            &.pageBtn{
+                padding: 11px 33px;
+                font-size: 14px;
+            }
+        }
+    }
+    
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin howToPlay-mixin-max-sm() {
+    .howToPlay{
+        .main-heading {
+            font-size: 22px;
+        }
+        & .howToPlaySection{
+            height: 392px;
+    
+            &::after{
+           
+            }
+            &::before{
+            
+            }
+            & .howToPlayImg{
+                width: 521px;
+                height: 392px;
+                & .videoplay{
+                    height: 80px;
+                    width: 80px;
+                }
+            }
+        }
+    }
+    
+}
+// Medium devices (tablets, less than 992px)
+@mixin howToPlay-mixin-max-md() {
+    .howToPlay{
+        & .main-heading{
+            font-size: 25px;
+        }
+        & .howToPlaySection{
+         
+    
+            &::after{
+
+            }
+            &::before{
+          
+            }
+            & .howToPlayImg{
+                   
+                & .videoplay{
+                  
+                 
+                }
+            }
+        }
+        & .Custom-btn{
+            &.pageBtn{
+                font-size: 16px;
+            }
+        }
+    }
+    
+}
+// Large devices (desktops, less than 1200px)
+@mixin howToPlay-mixin-max-lg() {
+    .howToPlay{
+        & .main-heading{
+            font-size: 36px;
+        }
+        & .howToPlaySection{
+        
+    
+            &::after{
+      
+            }
+            &::before{
+        
+            }
+            & .howToPlayImg{
+            
+                & .videoplay{
+              
+                 
+                }
+            }
+        }
+    }
+    
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin howToPlay-mixin-max-xl() {
+    .howToPlay{
+        & .howToPlaySection{
+         
+    
+            &::after{
+             
+            }
+            &::before{
+              
+            }
+            & .howToPlayImg{
+                    
+                & .videoplay{
+                 
+    
+                 
+                }
+            }
+        }
+    }
+    
+}
+
+// studentSay 
+
+.studentSay{
+    & .main-heading{
+        font-size: 40px;
+    }
+    & .studentsSaysection{
+        & .owl-stage-outer{
+            padding: 0 !important;
+           
+        }
+        & .owl-dots{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding-top: 35px;
+     
+            & .owl-dot {
+                background-color: $theme1 !important;
+                width: 10px;
+                height: 5px;
+                border-radius: 35px;
+                &.active{
+                    width: 25px;
+                height: 5px;
+                }
+            }
+        }
+        & .card{
+           &.active{
+            background-color:#FCFCFC;
+           }
+            &::before{
+                position: absolute;
+                content: '';
+                background-image: url(../img/Main-page/colon.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 24px;
+                width: 30px;
+                top: -12px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            & .card-body{
+                & .cardimages{
+                    width: 50px ;
+                    height: 50px ;
+                   
+                    & .user-img{
+                        width: 50px !important;
+                        height: 50px !important;
+
+                    }
+                }
+                & .card-content{
+                    & .Sub-title-heading {
+                        font-size: 18px;
+                    }
+                    & .card-subheading{
+                        color: $theme1;
+                    }
+                    & .card-subheading-title{
+                      font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin studentSay-mixin-min-sm() {}
+// Medium devices (tablets, 768px and up)
+@mixin studentSay-mixin-min-md() {}
+// Large devices (desktops, 992px and up)
+@mixin studentSay-mixin-min-lg() {}
+// X-Large devices (large desktops, 1200px and up)
+@mixin studentSay-mixin-min-xl() {}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin studentSay-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin studentSay-mixin-max-xs() {
+    .studentSay{
+        & .main-heading{
+            font-size: 20px;
+        }
+        & .studentsSaysection{
+            & .owl-stage-outer{
+             
+               
+            }
+            & .owl-dots{
+                padding-top: 16px;
+         
+                & .owl-dot {
+               
+                    &.active{
+                     
+                    }
+                }
+            }
+            & .card{
+               &.active{
+           
+               }
+                &::before{
+                   
+                }
+                & .card-body{
+                    & .cardimages{
+                       
+                       
+                        & .user-img{
+                          
+    
+                        }
+                    }
+                    & .card-content{
+                        .Sub-title-heading {
+                            font-size: 16px;
+                        }
+                        & .card-subheading{
+                         
+                        }
+                        & .card-subheading-title{
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin studentSay-mixin-max-sm() {
+    .studentSay{
+        & .main-heading {
+            font-size: 22px;
+        }
+        & .studentsSaysection{
+            & .owl-stage-outer{
+               
+               
+            }
+            & .owl-dots{
+        
+         
+                & .owl-dot {
+                    
+                    &.active{
+                  
+                    }
+                }
+            }
+            & .card{
+               &.active{
+               
+               }
+                &::before{
+                   
+                }
+                & .card-body{
+                    & .cardimages{
+                       
+                        & .user-img{
+    
+                        }
+                    }
+                    & .card-content{
+                        .Sub-title-heading {
+                            font-size: 18px;
+                        }
+                        & .card-subheading{
+                          
+                        }
+                        & .card-subheading-title{
+                        
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+// Medium devices (tablets, less than 992px)
+@mixin studentSay-mixin-max-md() {
+    
+    .studentSay{
+        & .studentsSaysection{
+            & .owl-stage-outer{
+              
+               
+            }
+            & .owl-dots{
+               
+         
+                & .owl-dot {
+       
+                    &.active{
+                     
+                    }
+                }
+            }
+            & .card{
+               &.active{
+             
+               }
+                &::before{
+                
+                }
+                & .card-body{
+                    & .cardimages{
+                    
+                       
+                        & .user-img{
+                     
+    
+                        }
+                    }
+                    & .card-content{
+                        & .card-subheading{
+                          
+                        }
+                        & .card-subheading-title{
+                   
+                        }
+                    }
+                }
+            }
+        }
+        & .main-heading{
+            font-size: 25px;
+        }
+    }
+    
+}
+// Large devices (desktops, less than 1200px)
+@mixin studentSay-mixin-max-lg() {
+     
+    .studentSay{
+        & .studentsSaysection{
+            & .owl-stage-outer{
+              
+               
+            }
+            & .owl-dots{
+            
+         
+                & .owl-dot {
+                
+                    &.active{
+                  
+                    }
+                }
+            }
+            & .card{
+               &.active{
+                
+               }
+                &::before{
+                    
+                }
+                & .card-body{
+                    & .cardimages{
+                      
+                       
+                        & .user-img{
+                          
+    
+                        }
+                    }
+                    & .card-content{
+                        & .card-subheading{
+                     
+                        }
+                        & .card-subheading-title{
+                         
+                        }
+                    }
+                }
+            }
+        }
+        & .main-heading{
+            font-size: 36px;
+        }
+    }
+    
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin studentSay-mixin-max-xl() {
+    .studentSay{
+        & .studentsSaysection{
+            & .owl-stage-outer{
+            
+               
+            }
+            & .owl-dots{
+             
+         
+                & .owl-dot {
+                 
+                    &.active{
+                 
+                    }
+                }
+            }
+            & .card{
+               &.active{
+              
+               }
+                &::before{
+               
+                }
+                & .card-body{
+                    & .cardimages{
+                       
+                       
+                        & .user-img{
+                           
+    
+                        }
+                    }
+                    & .card-content{
+                        & .card-subheading{
+                        
+                        }
+                        & .card-subheading-title{
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Testimonials
+.Testimonials{
+    & .main-heading{
+        font-size: 40px;
+    }
+    & .owl-stage-outer{
+        padding: 0 !important;
+       
+    }
+    & .testimonialsowl{
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            & .owl-nav{
+                & .owl-prev{
+                    left: -40px;
+                }
+                & .owl-next{
+                    right: -40px;
+                }
+            }
+        }
+        & .owl-nav{
+        
+            & button {
+                position: absolute;
+                top: 50%;
+                transform: translate(0,-50%);
+                background: #F6F8F9;
+                box-shadow: 0px 2.18667px 9.29333px rgba(0, 0, 0, 0.13);
+                border-radius: 50px;
+                width: 30px;
+                height: 30px;
+                transition: all .3s ease-in-out;
+                &.owl-prev {
+                    left: -15px;
+                }
+                &.owl-next  {
+                    right: -15px;
+                }
+            }
+        
+        }
+        & .testimonials-images{
+            width:100%;
+            height: 191px;
+            overflow: hidden !important;
+            & img{
+                object-fit: cover;
+                aspect-ratio: 10/10;
+                border-radius: 5px;
+                
+            }
+        }
+        & .video-img{
+            width: 56px;
+            height: 56px;
+            background-color: $theme1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            & .icon{
+                width: 15px;
+                height: 17px;
+            }
+        }
+
+    }
+    
+   
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin Testimonials-mixin-min-sm() {
+ 
+}
+// Medium devices (tablets, 768px and up)
+@mixin Testimonials-mixin-min-md() {}
+// Large devices (desktops, 992px and up)
+@mixin Testimonials-mixin-min-lg() {}
+// X-Large devices (large desktops, 1200px and up)
+@mixin Testimonials-mixin-min-xl() {}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin Testimonials-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin Testimonials-mixin-max-xs() {
+    .Testimonials{
+        & .main-heading{
+            font-size: 20px;
+        }
+        & .owl-stage-outer{
+         
+           
+        }
+        & .testimonialsowl{
+            & .owl-nav{
+               
+               & .owl-prev{
+               
+               }
+               & .owl-next{
+               
+               }
+            }
+            & .testimonials-images{
+              
+            }
+            & .video-img{
+             
+                & .icon{
+                   
+                }
+            }
+    
+        }
+        
+       
+    }
+    
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin Testimonials-mixin-max-sm() {
+    .Testimonials{
+        .main-heading {
+            font-size: 22px;
+        }
+        & .owl-stage-outer{
+         
+           
+        }
+        & .testimonialsowl{
+            & .owl-nav{
+               
+               & .owl-prev{
+               
+               }
+               & .owl-next{
+               
+               }
+            }
+            & .testimonials-images{
+                
+            }
+            & .video-img{
+             
+                & .icon{
+                   
+                }
+            }
+    
+        }
+        
+       
+    }
+    
+}
+// Medium devices (tablets, less than 992px)
+@mixin Testimonials-mixin-max-md() {
+    
+    .Testimonials{
+        & .owl-stage-outer{
+         
+           
+        }
+        & .testimonialsowl{
+            & .owl-nav{
+              
+               & .owl-prev{
+             
+               }
+               & .owl-next{
+          
+               }
+            }
+            & .testimonials-images{
+             
+            }
+            & .video-img{
+             
+                & .icon{
+                 
+                }
+            }
+    
+        }
+        & .main-heading{
+            font-size: 25px;
+        }
+       
+    }
+    
+}
+// Large devices (desktops, less than 1200px)
+@mixin Testimonials-mixin-max-lg() {
+    .Testimonials{
+        & .main-heading{
+            font-size: 36px;
+        }
+        & .owl-stage-outer{
+            
+           
+        }
+        & .testimonialsowl{
+            & .owl-nav{
+             
+               & .owl-prev{
+              
+               }
+               & .owl-next{
+             
+               }
+            }
+            & .testimonials-images{
+             
+            }
+            & .video-img{
+             
+                & .icon{
+                   
+                }
+            }
+    
+        }
+        
+       
+    }
+    
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin Testimonials-mixin-max-xl() {
+    .Testimonials{
+        & .owl-stage-outer{
+        
+           
+        }
+        & .testimonialsowl{
+            & .owl-nav{
+           
+               & .owl-prev{
+            
+               }
+               & .owl-next{
+           
+               }
+            }
+            & .testimonials-images{
+            
+            }
+            & .video-img{
+                
+                & .icon{
+                   
+                }
+            }
+    
+        }
+        
+       
+    }
+}
+
+
+// popularCountries
+.popularCountries{
+    & .main-heading{
+        font-size: 40px;
+        line-height: 60px;
+        &::after{
+            position: absolute;
+            content: '';
+            background-color: $theme1;
+            height: 90px;
+            width: 7px;
+            top: 17px;
+            left: 0;
+        }
+    }
+    & .theme2Heading{
+        font-size: 20px;
+    }
+  
+    & .countries-img{
+        max-width: 100%;
+        max-height: 157px;
+        overflow: hidden;
+    }
+  
+    
+}
+// Small devices (landscape phones, 576px and up)
+@mixin popularCountries-mixin-min-sm() {
+ 
+}
+// Medium devices (tablets, 768px and up)
+@mixin popularCountries-mixin-min-md() {}
+// Large devices (desktops, 992px and up)
+@mixin popularCountries-mixin-min-lg() {}
+// X-Large devices (large desktops, 1200px and up)
+@mixin popularCountries-mixin-min-xl() {}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin popularCountries-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin popularCountries-mixin-max-xs() {
+    .popularCountries{
+        & .theme2Heading{
+            font-size: 16px;
+        }
+        & .main-heading{
+            font-size: 20px;
+            line-height: 32px;
+            &::after{
+                height: 41px;
+                top: 11px;
+            }
+        }
+      
+        & .countries-img{
+          
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin popularCountries-mixin-max-sm() {
+    .popularCountries{
+        & .theme2Heading{
+            font-size: 18px;
+        }
+        & .main-heading{
+            font-size: 22px;
+            line-height: 38px;
+            &::after{
+                height: 46px;
+                top: 16px;
+            }
+        }
+      
+        & .countries-img{
+          
+        }
+    }
+    
+}
+// Medium devices (tablets, less than 992px)
+@mixin popularCountries-mixin-max-md() {
+    .popularCountries{
+        & .main-heading{
+            font-size: 25px;
+            line-height: 45px;
+            &::after{
+                height: 60px;
+                top: 16px;
+            }
+        }
+      
+        & .countries-img{
+          
+        }
+    }
+    
+}
+// Large devices (desktops, less than 1200px)
+@mixin popularCountries-mixin-max-lg() {
+    .popularCountries{
+        & .main-heading{
+            font-size: 35px;
+            line-height: 55px;
+            &::after{
+             
+            }
+        }
+      
+        & .countries-img{
+          
+        }
+    }
+    
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin popularCountries-mixin-max-xl() {
+    .popularCountries{
+        & .main-heading{
+            &::after{
+             
+            }
+        }
+      
+        & .countries-img{
+          
+        }
+    }
+}
+
+// MentorsSay
+
+.mentorsSay{
+    & .main-heading{
+        font-size: 40px;
+    }
+    & .owl-stage-outer{
+        padding: 0 !important;
+        position: relative;
+       
+    }
+    & .mentorsSayowl{
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            & .owl-nav{
+                & .owl-prev{
+                    left: -50.50px;
+                }
+                & .owl-next{
+                    right: -50.50px;
+                }
+            }
+        }
+        & .owl-nav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          
+           & .owl-prev{
+            position: absolute;
+            top: 50%;
+            left: -17.50px;
+            transform: translateY(-50%);
+            background: #F6F8F9;
+            box-shadow: 0px 2.18667px 9.29333px rgba(0, 0, 0, 0.13);
+            border-radius: 50px;
+            width: 35px;
+            height: 35px;
+            transition: all 0.3s ease-in-out;
+            
+           }
+           & .owl-next{
+            position: absolute;
+            top: 50%;
+            right: -17.50px;
+            transform: translateY(-50%);
+            background: #F6F8F9;
+            box-shadow: 0px 2.18667px 9.29333px rgba(0, 0, 0, 0.13);
+            border-radius: 50px;
+            width: 35px;
+            height: 35px;
+            transition: all 0.3s ease-in-out;
+           }
+        }
+        & .MentorsSay-images{
+            max-width: 100%;
+            max-height: 414px;
+        }
+        & .video-img{
+            width: 78px;
+            height: 78px;
+            background-color: $theme1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            & .icon{
+                width: 29px;
+                height: 29px;
+            }
+         
+        }
+
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin mentorsSay-mixin-min-sm() {
+ 
+}
+// Medium devices (tablets, 768px and up)
+@mixin mentorsSay-mixin-min-md() {}
+// Large devices (desktops, 992px and up)
+@mixin mentorsSay-mixin-min-lg() {}
+// X-Large devices (large desktops, 1200px and up)
+@mixin mentorsSay-mixin-min-xl() {}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin mentorsSay-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin mentorsSay-mixin-max-xs() {
+    .mentorsSay{
+        & .main-heading {
+            font-size: 20px;
+        }
+        & .owl-stage-outer{
+     
+           
+        }
+        & .mentorsSayowl{
+        
+            &:hover{
+                & .owl-nav{
+                    & .owl-prev{
+                     
+                    }
+                    & .owl-next{
+                        
+                    }
+                }
+            }
+            & .owl-nav{
+          
+              
+               & .owl-prev{
+             
+                
+               }
+               & .owl-next{
+              
+               }
+            }
+            & .MentorsSay-images{
+          
+            }
+            & .video-img{
+              width: 50px;
+              height: 50px;
+                & .icon{
+                    width: 18px;
+                    height: 18px;
+                }
+             
+            }
+    
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin mentorsSay-mixin-max-sm() {
+    .mentorsSay{
+     & .main-heading {
+            font-size: 22px;
+        }
+        & .owl-stage-outer{
+     
+           
+        }
+        & .mentorsSayowl{
+        
+            &:hover{
+                & .owl-nav{
+                    & .owl-prev{
+                     
+                    }
+                    & .owl-next{
+                        
+                    }
+                }
+            }
+            & .owl-nav{
+          
+              
+               & .owl-prev{
+             
+                
+               }
+               & .owl-next{
+              
+               }
+            }
+            & .MentorsSay-images{
+          
+            }
+            & .video-img{
+              
+                & .icon{
+                  width: 24px;
+                  height: 24px;
+                }
+             
+            }
+    
+        }
+    }
+    
+}
+// Medium devices (tablets, less than 992px)
+@mixin mentorsSay-mixin-max-md() {
+    .mentorsSay{
+        & .main-heading {
+            font-size: 25px;
+        }
+        & .owl-stage-outer{
+     
+           
+        }
+        & .mentorsSayowl{
+        
+            &:hover{
+                & .owl-nav{
+                    & .owl-prev{
+                     
+                    }
+                    & .owl-next{
+                        
+                    }
+                }
+            }
+            & .owl-nav{
+          
+              
+               & .owl-prev{
+             
+                
+               }
+               & .owl-next{
+              
+               }
+            }
+            & .MentorsSay-images{
+          
+            }
+            & .video-img{
+                width: 59px;
+                height: 59px;
+                & .icon{
+                  
+                }
+             
+            }
+    
+        }
+    }
+    
+}
+// Large devices (desktops, less than 1200px)
+@mixin mentorsSay-mixin-max-lg() {
+    .mentorsSay{
+        & .main-heading {
+            font-size: 36px;
+        }
+        & .owl-stage-outer{
+     
+           
+        }
+        & .mentorsSayowl{
+        
+            &:hover{
+                & .owl-nav{
+                    & .owl-prev{
+                     
+                    }
+                    & .owl-next{
+                        
+                    }
+                }
+            }
+            & .owl-nav{
+          
+              
+               & .owl-prev{
+             
+                
+               }
+               & .owl-next{
+              
+               }
+            }
+            & .MentorsSay-images{
+          
+            }
+            & .video-img{
+                width: 69px;
+                height: 69px;
+                & .icon{
+                  
+                }
+             
+            }
+    
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin mentorsSay-mixin-max-xl() {
+    .mentorsSay{
+        & .owl-stage-outer{
+     
+           
+        }
+        & .mentorsSayowl{
+        
+            &:hover{
+                & .owl-nav{
+                    & .owl-prev{
+                     
+                    }
+                    & .owl-next{
+                        
+                    }
+                }
+            }
+            & .owl-nav{
+          
+              
+               & .owl-prev{
+             
+                
+               }
+               & .owl-next{
+              
+               }
+            }
+            & .MentorsSay-images{
+          
+            }
+            & .video-img{
+              
+                & .icon{
+                  
+                }
+             
+            }
+    
+        }
+    }
+}
+// IGSPartners 
+.iGSPartners{
+    & .main-heading{
+        font-size: 40px;
+    }
+    & .owl-stage-outer{
+        padding: 0 !important;
+        position: relative;
+       
+    }
+    & .igsPartnerowl{
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            & .owl-nav{
+                & button{
+                    &.owl-prev{
+                        left: -35px;
+                    }
+                    &.owl-next{
+                        right:-35px;
+                    }
+                }
+            }
+        }
+    
+        & .owl-nav{
+         & button{
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            background: #f6f8f9;
+            box-shadow: 0px 2.18667px 9.29333px rgba(0,0,0,.13);
+            border-radius: 50px;
+            width: 30px;
+            height: 30px;
+            transition: all .3s ease-in-out;
+            &.owl-prev{
+                left: -15px;
+            }
+            &.owl-next{
+                right: -15px;
+            }
+         }
+         
+        }
+        & .item{ 
+            margin-top: 5px !important;
+            margin-left: 5px !important;
+            margin-bottom: 5px !important;
+            background-color: $theme3;
+            & .card{
+            transition: all 0.3s ease-in-out;
+            
+            box-shadow: 0px 1.57219px 22.7967px rgba(0, 0, 0, 0.1);
+           
+            & .igs-image{
+                max-width: 182px;
+                max-height: 55px;
+            }
+            
+         }
+
+          
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin iGSPartners-mixin-min-sm() {
+ 
+}
+// Medium devices (tablets, 768px and up)
+@mixin iGSPartners-mixin-min-md() {}
+// Large devices (desktops, 992px and up)
+@mixin iGSPartners-mixin-min-lg() {}
+// X-Large devices (large desktops, 1200px and up)
+@mixin iGSPartners-mixin-min-xl() {}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin iGSPartners-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin iGSPartners-mixin-max-xs() {
+    .iGSPartners{
+        & .main-heading {
+            font-size: 20px;
+        }
+        & .owl-stage-outer{
+        
+           
+        }
+        & .igsPartnerowl{
+        
+            &:hover{
+                & .owl-nav{
+                    & .owl-prev{
+                    
+                    }
+                    & .owl-next{
+                      
+                    }
+                }
+            }
+        
+            & .owl-nav{
+             
+              
+               & .owl-prev{
+                & span{
+               
+                }
+              
+                &:hover{
+                  
+                }
+               }
+               & .owl-next{
+             
+                &:hover{
+                 
+                }
+    
+               }
+            }
+            & .item{ 
+                & .card{
+            
+                & .igs-image{
+                  
+                }
+                
+             }
+    
+              
+            }
+        }
+        & .Custom-btn{
+            &.pageBtn{
+                padding: 11px 33px;
+                font-size: 14px;
+            }
+        }
+    }
+   
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin iGSPartners-mixin-max-sm() {
+    .iGSPartners{
+        & .main-heading {
+            font-size: 22px;
+        }
+        & .owl-stage-outer{
+        
+           
+        }
+        & .igsPartnerowl{
+        
+            &:hover{
+                & .owl-nav{
+                    & .owl-prev{
+                    
+                    }
+                    & .owl-next{
+                      
+                    }
+                }
+            }
+        
+            & .owl-nav{
+             
+              
+               & .owl-prev{
+                & span{
+               
+                }
+              
+                &:hover{
+                  
+                }
+               }
+               & .owl-next{
+             
+                &:hover{
+                 
+                }
+    
+               }
+            }
+            & .item{ 
+                & .card{
+            
+                & .igs-image{
+                  
+                }
+                
+             }
+    
+              
+            }
+        }
+    }
+    
+}
+// Medium devices (tablets, less than 992px)
+@mixin iGSPartners-mixin-max-md() {
+    .iGSPartners{
+        & .main-heading {
+            font-size: 25px;
+        }
+        & .owl-stage-outer{
+        
+           
+        }
+        & .igsPartnerowl{
+        
+            &:hover{
+                & .owl-nav{
+                    & .owl-prev{
+                    
+                    }
+                    & .owl-next{
+                      
+                    }
+                }
+            }
+        
+            & .owl-nav{
+             
+              
+               & .owl-prev{
+                & span{
+               
+                }
+              
+                &:hover{
+                  
+                }
+               }
+               & .owl-next{
+             
+                &:hover{
+                 
+                }
+    
+               }
+            }
+            & .item{ 
+                & .card{
+            
+                & .igs-image{
+                  
+                }
+                
+             }
+    
+              
+            }
+        }
+        & .Custom-btn{
+            &.pageBtn{
+                font-size: 16px;
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin iGSPartners-mixin-max-lg() {
+    .iGSPartners{
+        & .main-heading {
+            font-size: 36px;
+        }
+        & .owl-stage-outer{
+        
+           
+        }
+        & .igsPartnerowl{
+        
+            &:hover{
+                & .owl-nav{
+                    & .owl-prev{
+                    
+                    }
+                    & .owl-next{
+                      
+                    }
+                }
+            }
+        
+            & .owl-nav{
+             
+              
+               & .owl-prev{
+                & span{
+               
+                }
+              
+                &:hover{
+                  
+                }
+               }
+               & .owl-next{
+             
+                &:hover{
+                 
+                }
+    
+               }
+            }
+            & .item{ 
+                & .card{
+            
+                & .igs-image{
+                  
+                }
+                
+             }
+    
+              
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin iGSPartners-mixin-max-xl() {
+    .iGSPartners{
+   
+        & .owl-stage-outer{
+        
+           
+        }
+        & .igsPartnerowl{
+        
+            &:hover{
+                & .owl-nav{
+                    & .owl-prev{
+                    
+                    }
+                    & .owl-next{
+                      
+                    }
+                }
+            }
+        
+            & .owl-nav{
+             
+              
+               & .owl-prev{
+                & span{
+               
+                }
+              
+                &:hover{
+                  
+                }
+               }
+               & .owl-next{
+             
+                &:hover{
+                 
+                }
+    
+               }
+            }
+            & .item{ 
+                & .card{
+            
+                & .igs-image{
+                  
+                }
+                
+             }
+    
+              
+            }
+        }
+    }
+}
+
+// ourServices 
+.ourServices{
+    & .main-heading {
+        font-size: 40px;
+    }
+    & .accordion{
+        & .accordion-item{
+            & .accordion-header{
+                & .accordion-button{
+                    transition: all 0.3s ease-in-out;
+                    &.Sub-title-heading {
+                        font-size: 18px;
+                    }
+                    &::after{
+                        background-image: none;
+                    }
+                    &:not(.collapsed){
+                        background-color:$theme3 !important;
+                        & .user{
+                            & .icon{
+                                filter: none !important;
+                                background: #F5CDD0;
+                                & img {
+                                    filter: none !important;
+                                }
+                            }
+                            
+                        }
+                        &::after{
+                            background-image: url(../img/Main-page/CollapseArrow.svg);
+                            transform: none;
+                        }
+                       
+                    }
+                    &:focus{
+                        box-shadow: none;
+                    }
+                    & .user{
+                        & .icon{
+                            width: 60px;
+                            height: 60px;
+                            background: #F5F5F5;
+                            filter: grayscale(1);
+                            transition: all 0.3s ease-in-out;
+                        }
+
+                    }
+                }
+            }
+            & .accordion-body{
+                padding: 20px 43px 26px 94px ;
+                & .pera{
+                    color:#848484;
+                    font-size: 15.72px;
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin ourServices-mixin-min-sm() {
+ 
+}
+// Medium devices (tablets, 768px and up)
+@mixin ourServices-mixin-min-md() {}
+// Large devices (desktops, 992px and up)
+@mixin ourServices-mixin-min-lg() {}
+// X-Large devices (large desktops, 1200px and up)
+@mixin ourServices-mixin-min-xl() {}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin ourServices-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin ourServices-mixin-max-xs() {
+    .ourServices{
+        & .main-heading {
+            font-size: 20px;
+        }
+        & .accordion{
+            & .accordion-item{
+                & .accordion-header{
+                    & .accordion-button{
+                        &.Sub-title-heading {
+                            font-size: 15px !important;
+                        }
+                        &::after{
+                          
+                        }
+                        &:not(.collapsed){
+                            & .user{
+                                & .icon{
+                                   
+                                }
+                            }
+                            &::after{
+                             
+                            }
+                        }
+                        &:focus{
+                           
+                        }
+                        & .user{
+                            & .icon{
+                                    width: 40px ;
+                                    height: 40px;
+                            }
+    
+                        }
+                    }
+                }
+                & .accordion-body{
+                  
+                    & .pera{
+                        color:#848484;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+   
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin ourServices-mixin-max-sm() {
+    .ourServices{
+        & .main-heading {
+            font-size: 22px;
+        }
+        & .accordion{
+            & .accordion-item{
+                & .accordion-header{
+                    & .accordion-button{
+                        &.Sub-title-heading {
+                            font-size: 17px !important;
+                        }
+                        &::after{
+                          
+                        }
+                        &:not(.collapsed){
+                            & .user{
+                                & .icon{
+                              
+                                }
+                            }
+                            &::after{
+                             
+                            }
+                        }
+                        &:focus{
+                           
+                        }
+                        & .user{
+                            & .icon{
+                                width: 48px;
+                                height: 48px;
+                            }
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+// Medium devices (tablets, less than 992px)
+@mixin ourServices-mixin-max-md() {
+    .ourServices{
+        & .main-heading {
+            font-size: 25px;
+        }
+        & .accordion{
+            & .accordion-item{
+                & .accordion-header{
+                    & .accordion-button{
+                      
+                        &::after{
+                          
+                        }
+                        &:not(.collapsed){
+                            & .user{
+                                & .icon{
+                             
+                                }
+                            }
+                            &::after{
+                             
+                            }
+                        }
+                        &:focus{
+                           
+                        }
+                        & .user{
+                            & .icon{
+                               
+                            }
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin ourServices-mixin-max-lg() {
+    .ourServices{
+        & .main-heading {
+            font-size: 36px;
+        }
+        & .accordion{
+            & .accordion-item{
+                & .accordion-header{
+                    & .accordion-button{
+                      &.Sub-title-heading {
+                            font-size: 18px !important;
+                        }
+                        &::after{
+                          
+                        }
+                        &:not(.collapsed){
+                            & .user{
+                                & .icon{
+                             
+                                }
+                            }
+                            &::after{
+                             
+                            }
+                        }
+                        &:focus{
+                           
+                        }
+                        & .user{
+                            & .icon{
+                                width: 55px;
+                                height: 55px;
+                            }
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin ourServices-mixin-max-xl() {
+    .ourServices{
+        & .accordion{
+            & .accordion-item{
+                & .accordion-header{
+                    & .accordion-button{
+                      
+                        &::after{
+                          
+                        }
+                        &:not(.collapsed){
+                            & .user{
+                                & .icon{
+                             
+                                }
+                            }
+                            &::after{
+                             
+                            }
+                        }
+                        &:focus{
+                           
+                        }
+                        & .user{
+                            & .icon{
+                               
+                            }
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// parentsSay
+.parentsSay{
+    & .main-heading {
+        font-size: 40px;
+    }
+    & .studentsSaysection{
+        & .card{
+           
+            &::before{
+                position: absolute;
+                content: '';
+                background-image: url(../img/Main-page/colon.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 24px;
+                width: 30px;
+                top: -12px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            & .card-body{
+                & .cardimages{
+                    width: 50px ;
+                    height: 50px ;
+                   
+                    & .user-img{
+                        width: 50px !important;
+                        height: 50px !important;
+
+                    }
+                }
+                & .card-content{
+                    & .card-subheading{
+                        color: $theme1;
+                    }
+                    & .card-subheading-title{
+                        color: $theme2;
+                    }
+                }
+            }
+        }
+    }
+}
+// Small devices (landscape phones, 576px and up)
+@mixin parentsSay-mixin-min-sm() {
+ 
+}
+// Medium devices (tablets, 768px and up)
+@mixin parentsSay-mixin-min-md() {}
+// Large devices (desktops, 992px and up)
+@mixin parentsSay-mixin-min-lg() {}
+// X-Large devices (large desktops, 1200px and up)
+@mixin parentsSay-mixin-min-xl() {}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin parentsSay-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin parentsSay-mixin-max-xs() {
+    .parentsSay{
+      & .main-heading {
+            font-size: 20px;
+        }
+        & .studentsSaysection{
+            & .card{
+               
+                &::before{
+                  
+          
+                }
+                & .card-body{
+                    & .cardimages{
+                    
+                       
+                        & .user-img{
+                          
+    
+                        }
+                    }
+                    & .card-content{
+                       & .Sub-title-heading {
+                            font-size: 16px;
+                        }
+                        & .card-subheading{
+                            
+                        }
+                        & .card-subheading-title{
+                          
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin parentsSay-mixin-max-sm() {
+    .parentsSay{
+       & .main-heading {
+            font-size: 22px;
+        }
+        & .studentsSaysection{
+            & .card{
+               
+                &::before{
+                  
+          
+                }
+                & .card-body{
+                    & .cardimages{
+                    
+                       
+                        & .user-img{
+                          
+    
+                        }
+                    }
+                    & .card-content{
+                       & .Sub-title-heading {
+                            font-size: 18px;
+                        }
+                        & .card-subheading{
+                            
+                        }
+                        & .card-subheading-title{
+                          
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+// Medium devices (tablets, less than 992px)
+@mixin parentsSay-mixin-max-md() {
+    .parentsSay{
+        & .main-heading {
+            font-size: 25px;
+        }
+        & .studentsSaysection{
+            & .card{
+               
+                &::before{
+                  
+          
+                }
+                & .card-body{
+                    & .cardimages{
+                    
+                       
+                        & .user-img{
+                          
+    
+                        }
+                    }
+                    & .card-content{
+                        & .card-subheading{
+                            
+                        }
+                        & .card-subheading-title{
+                          
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin parentsSay-mixin-max-lg() {
+    .parentsSay{
+        & .main-heading {
+            font-size: 36px;
+        }
+        & .studentsSaysection{
+            & .card{
+               
+                &::before{
+                  
+          
+                }
+                & .card-body{
+                    & .cardimages{
+                    
+                       
+                        & .user-img{
+                          
+    
+                        }
+                    }
+                    & .card-content{
+                        & .card-subheading{
+                            
+                        }
+                        & .card-subheading-title{
+                          
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin parentsSay-mixin-max-xl() {
+    .parentsSay{
+        & .studentsSaysection{
+            & .card{
+               
+                &::before{
+                  
+          
+                }
+                & .card-body{
+                    & .cardimages{
+                    
+                       
+                        & .user-img{
+                          
+    
+                        }
+                    }
+                    & .card-content{
+                        & .card-subheading{
+                            
+                        }
+                        & .card-subheading-title{
+                          
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

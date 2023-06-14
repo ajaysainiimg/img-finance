@@ -1,0 +1,40 @@
+.Custom-btn{
+    background-color:$theme1 ;
+    border: 1px solid $theme1;
+    padding: 7px 31.5px;
+    font-size: 16px;
+    color: $theme3;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+        background-color:$theme3;
+        color: $theme1;
+        border: 1px solid $theme1;
+    }
+}
+.Outline-btn{
+    background-color: $theme3;
+    color: $theme1;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+        color: $theme3;
+        background-color:$theme1 ;
+    }
+}
+.Glass-btn{
+    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        color: $theme1;
+        background-color:$theme3 ;
+    }
+}
+
+.pageBtn{
+    padding: 14px 37px;
+    font-size: 18px;
+}
