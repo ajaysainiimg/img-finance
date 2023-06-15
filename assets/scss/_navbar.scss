@@ -55,7 +55,8 @@
 // X-Small devices (portrait phones, less than 576px)
 @mixin navbar-mixin-max-xs() {
     .navbar {
-        height: auto;
+        height: 65px;
+       
         & .logo{
             width: 100px;
         }
@@ -101,9 +102,9 @@
 // Small devices (landscape phones, less than 768px)
 @mixin navbar-mixin-max-sm() {
     .navbar {
-        height: auto;
+        height: 70px;
         & .logo{
-          width: 120px;
+          width: 109px;
         }
       & .icons-nav{
         & .offcanvas-btn-nav{
@@ -111,8 +112,9 @@
            
             }
         }
-        & a{
-           
+        & .icon{
+            display: flex;
+            height: 24px;
         }
       }
         & .navbar-offcanvas{

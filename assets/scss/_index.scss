@@ -503,6 +503,11 @@
                      
                     }
                 }
+
+                & .Outline-btn{
+
+                    width: 100% !important;
+                }
                 & .section-border{
                 //    display: none;
                 border-right: none !important;
@@ -576,9 +581,11 @@
         border: 1px solid #EEDCDC ;
         background-color: #EEDCDC;
         & .nav-item{
-
+            // width: 100%;
             & .nav-link{
-                width: 308px;
+                flex-wrap:nowrap;
+                white-space: nowrap;
+                overflow: auto;
                 height: 48px;
                 border: 1px solid #EEDCDC !important;
                 background-color: #EEDCDC;
@@ -586,7 +593,8 @@
                     background-color: $theme1;
                     color: $theme3 !important;
                     border-radius: 5px !important;
-                    border: 1px solid #EEDCDC !important;
+                    border: 2px solid #EEDCDC !important;
+                    
                 }
             }
         }
@@ -675,7 +683,7 @@
             & .nav-item{
     
                 & .nav-link{
-                    width: 220px;
+                    // width: 220px;
                     &.active{
                         
                     }
@@ -729,7 +737,7 @@
             & .nav-item{
     
                 & .nav-link{
-                    width: 235px;
+                    // width: 235px;
                     &.active{
                         
                     }
@@ -774,7 +782,7 @@
             & .nav-item{
     
                 & .nav-link{
-                    width: 247px;
+                    // width: 247px;
                     &.active{
                         
                     }
@@ -790,7 +798,7 @@
                         left: 170px;
                     }
                     &::before{
-                        right: 120px;
+                        right: 117px;
                     }
                     & .platform-images{
                      
@@ -1127,6 +1135,7 @@
         font-size: 40px;
     }
     & .studentsSaysection{
+     
         & .owl-stage-outer{
             padding: 0 !important;
            
@@ -1150,9 +1159,10 @@
             }
         }
         & .card{
-           &.active{
-            background-color:#FCFCFC;
-           }
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                 background-color:#FCFCFC;
+            }
             &::before{
                 position: absolute;
                 content: '';
@@ -1494,14 +1504,14 @@
                 background: #F6F8F9;
                 box-shadow: 0px 2.18667px 9.29333px rgba(0, 0, 0, 0.13);
                 border-radius: 50px;
-                width: 30px;
-                height: 30px;
+                width: 41px;
+                height: 41px;
                 transition: all .3s ease-in-out;
                 &.owl-prev {
-                    left: -15px;
+                    left: -25px;
                 }
                 &.owl-next  {
-                    right: -15px;
+                    right: -25px;
                 }
             }
         
@@ -1561,13 +1571,18 @@
         }
         & .testimonialsowl{
             & .owl-nav{
-               
-               & .owl-prev{
-               
-               }
-               & .owl-next{
-               
-               }
+        
+                & button {
+                    width: 30px;
+                    height: 30px;
+                  
+                    &.owl-prev {
+                        
+                    }
+                    &.owl-next  {
+                    }
+                }
+            
             }
             & .testimonials-images{
               
@@ -1896,8 +1911,8 @@
             background: #F6F8F9;
             box-shadow: 0px 2.18667px 9.29333px rgba(0, 0, 0, 0.13);
             border-radius: 50px;
-            width: 35px;
-            height: 35px;
+            width: 41px;
+            height: 41px;
             transition: all 0.3s ease-in-out;
             
            }
@@ -1909,8 +1924,8 @@
             background: #F6F8F9;
             box-shadow: 0px 2.18667px 9.29333px rgba(0, 0, 0, 0.13);
             border-radius: 50px;
-            width: 35px;
-            height: 35px;
+            width: 41px;
+            height: 41px;
             transition: all 0.3s ease-in-out;
            }
         }
@@ -1964,10 +1979,12 @@
             &:hover{
                 & .owl-nav{
                     & .owl-prev{
-                     
+                     width: 30px;
+                     height: 30px;
                     }
                     & .owl-next{
-                        
+                        width: 30px;
+                        height: 30px;
                     }
                 }
             }
@@ -2205,10 +2222,10 @@
             & .owl-nav{
                 & button{
                     &.owl-prev{
-                        left: -35px;
+                        left: -45px;
                     }
                     &.owl-next{
-                        right:-35px;
+                        right:-45px;
                     }
                 }
             }
@@ -2222,14 +2239,14 @@
             background: #f6f8f9;
             box-shadow: 0px 2.18667px 9.29333px rgba(0,0,0,.13);
             border-radius: 50px;
-            width: 30px;
-            height: 30px;
+            width: 40px;
+            height: 40px;
             transition: all .3s ease-in-out;
             &.owl-prev{
-                left: -15px;
+                left: -20px;
             }
             &.owl-next{
-                right: -15px;
+                right: -20px;
             }
          }
          
@@ -2648,6 +2665,8 @@
         }
         & .accordion{
             & .accordion-item{
+             
+                }
                 & .accordion-header{
                     & .accordion-button{
                         &.Sub-title-heading {
@@ -2678,13 +2697,16 @@
                         }
                     }
                 }
-                & .accordion-body{
-                  
+                & .accordion-body{  
+
+                        & .pageBtn{
+                            padding: 7px 28px;
+                            font-size: 14px;
+                        }
                     & .pera{
                         color:#848484;
                         font-size: 14px;
                     }
-                }
             }
         }
     }
